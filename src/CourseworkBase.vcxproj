@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63F64093-23C3-4181-8554-C22C5AE2DDAC}</ProjectGuid>
+    <RootNamespace>Coursework3Game</RootNamespace>
+    <ProjectName>CourseworkBase2020</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)/$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+      <WarningLevel>Level2</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDL\libx86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>map</MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\SDL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_NDEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDL\libx86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AutomatedObject.h" />
+    <ClInclude Include="BaseState.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="CollisionDetection.h" />
+    <ClInclude Include="DisplayableObjectContainer.h" />
+    <ClInclude Include="DragableImageObject.h" />
+    <ClInclude Include="DragableObject.h" />
+    <ClInclude Include="DragAlignment.h" />
+    <ClInclude Include="DrawingFilters.h" />
+    <ClInclude Include="DrawingSurface.h" />
+    <ClInclude Include="EndState.h" />
+    <ClInclude Include="FilterPoints.h" />
+    <ClInclude Include="BaseEngine.h" />
+    <ClInclude Include="DisplayableObject.h" />
+    <ClInclude Include="FontManager.h" />
+    <ClInclude Include="CoordinateMapping.h" />
+    <ClInclude Include="Guard.h" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="HelpState.h" />
+    <ClInclude Include="ImageManager.h" />
+    <ClInclude Include="MappableImageObject.h" />
+    <ClInclude Include="PauseState.h" />
+    <ClInclude Include="RunningState.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameMainObject.h" />
+    <ClInclude Include="AdvancedTileManager.h" />
+    <ClInclude Include="SelectState.h" />
+    <ClInclude Include="SimpleFlashingDragableImageObject.h" />
+    <ClInclude Include="SimpleImage.h" />
+    <ClInclude Include="MovementPosition.h" />
+    <ClInclude Include="ImageObject.h" />
+    <ClInclude Include="RawImage.h" />
+    <ClInclude Include="SimpleTrig.h" />
+    <ClInclude Include="StartState.h" />
+    <ClInclude Include="templates.h" />
+    <ClInclude Include="TileManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DragableBaseClassObject.h" />
+    <ClCompile Include="AutomatedObject.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="DrawingSurface.cpp" />
+    <ClCompile Include="EndState.cpp" />
+    <ClCompile Include="Guard.cpp" />
+    <ClCompile Include="HelpState.cpp" />
+    <ClCompile Include="mainfunction.cpp" />
+    <ClCompile Include="BaseEngine.cpp" />
+    <ClCompile Include="DisplayableObject.cpp" />
+    <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="PauseState.cpp" />
+    <ClCompile Include="RunningState.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GameMainObject.cpp" />
+    <ClCompile Include="AdvancedTileManager.cpp" />
+    <ClCompile Include="SelectState.cpp" />
+    <ClCompile Include="SimpleImage.cpp" />
+    <ClCompile Include="RawImage.cpp" />
+    <ClCompile Include="StartState.cpp" />
+    <ClCompile Include="TileManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data.txt" />
+    <Text Include="score.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

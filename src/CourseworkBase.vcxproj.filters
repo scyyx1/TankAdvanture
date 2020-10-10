@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\1 Framework">
+      <UniqueIdentifier>{4e4a6a07-d337-42ef-975e-413637bbb864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\2 Advanced Framework">
+      <UniqueIdentifier>{4131a9d2-db12-4b0d-8585-d40d60aa4b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\2 Advanced Framework">
+      <UniqueIdentifier>{7fc5a5ec-fa7d-4739-b176-6f5538b86764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1 Framework">
+      <UniqueIdentifier>{82649680-6f01-4f4b-9016-33d2f9930b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CW4">
+      <UniqueIdentifier>{7c857721-de52-4e39-a3f0-97c125f50584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CW4">
+      <UniqueIdentifier>{59515de1-8b70-4306-afcc-aa6b68ef43de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseEngine.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayableObject.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementPosition.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="templates.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="TileManager.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageObject.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="RawImage.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DragableObject.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterPoints.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayableObjectContainer.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DragAlignment.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingFilters.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSurface.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetection.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DragableImageObject.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleImage.h">
+      <Filter>Header Files\1 Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTrig.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFlashingDragableImageObject.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="DragableBaseClassObject.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="CoordinateMapping.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MappableImageObject.h">
+      <Filter>Header Files\2 Advanced Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="StartState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="RunningState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="EndState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="AutomatedObject.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="header.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectState.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="Guard.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMainObject.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedTileManager.h">
+      <Filter>Header Files\CW4</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mainfunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEngine.cpp">
+      <Filter>Source Files\1 Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayableObject.cpp">
+      <Filter>Source Files\1 Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>Source Files\1 Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="TileManager.cpp">
+      <Filter>Source Files\1 Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingSurface.cpp">
+      <Filter>Source Files\2 Advanced Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="RawImage.cpp">
+      <Filter>Source Files\2 Advanced Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleImage.cpp">
+      <Filter>Source Files\1 Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="StartState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="RunningState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="EndState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="AutomatedObject.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectState.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="Guard.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMainObject.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedTileManager.cpp">
+      <Filter>Source Files\CW4</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data.txt">
+      <Filter>Source Files\CW4</Filter>
+    </Text>
+    <Text Include="score.txt">
+      <Filter>Source Files\CW4</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
